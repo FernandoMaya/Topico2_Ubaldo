@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lectura</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+
+<body>
+    <header>Notas de Lectura</header>
+
+    <!-- ======================= CREAR NOTA ========================= -->
+    <div class="izq">
+        <div class="msj">Escribe algo en la nota</div>
+        <div class="crear-nota">
+            <input type="text" placeholder="Libro" id="titulo-nota">
+            <textarea placeholder="Conteo de palabras... Numero y paginas" id="texto-nota"></textarea>
+            <select id="tema-nota">
+				<option value="personal">Lectura</option>
+				{% comment %} <option value="trabajo">Trabajo</option>
+				<option value="escuela">Escuela</option> {% endcomment %}
+			</select>
+            <button id="agregar-nota">Agregar</button>
+        </div>
+    </div>
+
+    <!-- ==========================NOTAS============================= -->
+    <div class="der">
+        <!-- <h3>Notas Agregadas</h3> -->
+        <div class="deri">
+            <div class="contenedor-notas">
+                <!-- <div class="nota personal"></div>
+                <div class="nota trabajo"></div>
+                <div class="nota escuela"></div> -->
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
